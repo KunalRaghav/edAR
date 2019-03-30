@@ -11,4 +11,9 @@
         android:textAlignment="center"
         android:text="SUBJECT ACTIVITY"
         />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/container_subject">
+    </FrameLayout>
 </RelativeLayout>

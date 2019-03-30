@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="#eee">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/maths"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Math"
+            android:textColor="#fff"
+            android:textSize="48sp"
+            android:layout_gravity="center" />
+    </FrameLayout>
 </LinearLayout>

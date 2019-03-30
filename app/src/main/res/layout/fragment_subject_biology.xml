@@ -11,13 +11,13 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/physics"
+            android:src="@drawable/biology"
             android:scaleType="centerCrop"/>
         <TextView
             android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Physics"
+            android:text="Biology"
             android:textColor="#fff"
             android:textSize="48sp"
             android:layout_gravity="center" />
@@ -30,21 +30,24 @@
         app:cardCornerRadius="4dp"
         app:cardElevation="4dp"
         app:contentPadding="16dp"
-        android:id="@+id/solar_system"
+        android:id="@+id/body_dna"
         android:clickable="true"
         android:foreground="?attr/selectableItemBackground"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:scrollHorizontally="false"
             android:layout_gravity="start|center"
-            android:text="Space"
+            android:text="Body"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
             android:textSize="22sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Solar System"
+            android:text="DNA"
             android:textSize="24sp"
             android:textColor="#000"/>
     </com.google.android.material.card.MaterialCardView>
