@@ -21,6 +21,7 @@ public class SubjectListFragment extends Fragment {
     MaterialCardView EngCard;
     MaterialCardView PhyCard;
     MaterialCardView BioCard;
+    MaterialCardView HardCard;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -36,12 +37,14 @@ public class SubjectListFragment extends Fragment {
         EngCard=view.findViewById(R.id.subjectlist_eng);
         PhyCard=view.findViewById(R.id.subjectlist_Physics);
         BioCard=view.findViewById(R.id.subjectlist_biology);
+        HardCard=view.findViewById(R.id.subjectlist_hardware);
 
         ChemCard.setOnClickListener(CardOnClick);
         MathCard.setOnClickListener(CardOnClick);
         EngCard.setOnClickListener(CardOnClick);
         PhyCard.setOnClickListener(CardOnClick);
         BioCard.setOnClickListener(CardOnClick);
+        HardCard.setOnClickListener(CardOnClick);
     }
 
     View.OnClickListener CardOnClick = new View.OnClickListener() {
@@ -63,6 +66,9 @@ public class SubjectListFragment extends Fragment {
                     break;
                 case R.id.subjectlist_biology:
                     intent.putExtra("subject","biology");
+                    break;
+                case R.id.subjectlist_hardware:
+                    intent.putExtra("subject","hardware");
                     break;
 
             }

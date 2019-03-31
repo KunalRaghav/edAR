@@ -8,6 +8,7 @@ import com.codejillas.edAR.R;
 import com.codejillas.edAR.fragments.BiologyFragment;
 import com.codejillas.edAR.fragments.ChemistryFragment;
 import com.codejillas.edAR.fragments.EnglishFragment;
+import com.codejillas.edAR.fragments.HardwareFragment;
 import com.codejillas.edAR.fragments.MathsFragment;
 import com.codejillas.edAR.fragments.PhysicsFragment;
 
@@ -45,6 +46,10 @@ public class SubjectActivity extends AppCompatActivity {
             case "biology":
                 BiologyFragment biologyFragment = new BiologyFragment();
                 getSupportFragmentManager().beginTransaction().add(R.id.container_subject,biologyFragment,"bioFrag").commit();
+                break;
+            case "hardware":
+                HardwareFragment hardwareFragment = new HardwareFragment();
+                getSupportFragmentManager().beginTransaction().add(R.id.container_subject,hardwareFragment,"hardFrag").commit();
                 break;
         }
     }

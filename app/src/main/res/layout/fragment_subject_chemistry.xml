@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -75,3 +79,15 @@
             android:textColor="#000"/>
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_flasks"
+        app:backgroundTint="#000"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="20dp"
+        android:id="@+id/titration"
+        android:text="Titration"
+        android:textColor="#fff"
+        app:iconTint="#fff"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
