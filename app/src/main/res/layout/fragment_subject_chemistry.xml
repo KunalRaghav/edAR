@@ -87,7 +87,7 @@
         android:layout_gravity="bottom|center"
         android:layout_margin="20dp"
         android:id="@+id/titration"
-        android:text="Titration"
+        android:text="Explore"
         android:textColor="#fff"
         app:iconTint="#fff"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
